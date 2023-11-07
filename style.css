@@ -1,7 +1,10 @@
+html {overflow-x: hidden;}
+
 .landing-page {
 	background: #02070F;
-/*	width: 1201px;*/
-	margin-left: auto;
+	margin: auto;
+	padding: 0 22px;
+    overflow-x: hidden;
 }
 
 a {
@@ -55,10 +58,10 @@ a {
 .sword-siege {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	width: 1201px;
+	justify-content: center;
+	max-width: 1201px;
 	margin: auto;
-
+	gap: 114px;
 }
 
 .sword-siege-img {
@@ -67,7 +70,7 @@ a {
 }
 
 .sword-siege-text {
-	width: 641px;
+	max-width: 641px;
 }
 
 .sword-siege-text h2 {
@@ -79,7 +82,7 @@ a {
 	margin-bottom: 39px;
 }
 
-.icons {
+.sword-siege-text .icons {
 	width: 522px;
 	height: 195px;
 	display: flex;
@@ -88,19 +91,19 @@ a {
 	float: right;
 }
 
-.icon {
+.sword-siege-text .icon {
 	max-width: 178px;
 	width: auto;
 }
 
-.icon-foot {
+.sword-siege-text .icon-foot {
     width: 80%;
     display: flex;
     flex-direction: column;
     float: right;
     margin-top: 40px;
 }
-.icon-foot p{
+.sword-siege-text .icon-foot p{
 	text-align: left;
 	letter-spacing: 0px;
 	color: #F8F3EA;
@@ -108,35 +111,35 @@ a {
 	margin: 0 0 15px;
 }
 
-.hexagon {
+.sword-siege-text .hexagon {
   position: relative;
   width: 88px;
   height: 102px;
   background: transparent;
 /*  border: 3px solid #F8D79A;*/
 }
-.hexagon:before, .double:after {
+.sword-siege-text .hexagon:before, .double:after {
   position: absolute;
   content: '';
 }
-.hexagon:before {
+.sword-siege-text .hexagon:before {
   top: 4px;  /* border width */
   left: 4px;  /* border width */
   height: calc(100% - 8px);  /* 100% - (2 * border width) */
   width: calc(100% - 8px);  /* 100% - (2 * border width) */
   background: #F8D79A;
 }
-.hexagon, .hexagon:before, .double:after {
+.sword-siege-text .hexagon, .sword-siege-text .hexagon:before, .sword-siege-text .double:after {
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-.icon-img {
+.sword-siege-text .icon-img {
 /*	transform: matrix(0, 1, -1, 0, 0, 0);*/
 	margin: auto;
 }
 
-.icon p {
+.sword-siege-text .icon p {
 	text-align: center;
 /*	font: normal normal normal 16px/24px Archivo;*/
 	font-size: 16px;
@@ -148,7 +151,7 @@ a {
 .reviews {
 	margin: 85px auto 0;
 	display: flex;
-	width: 1201px;
+	max-width: 1201px;
 	flex-direction: row;
 	justify-content: space-between;
 }
@@ -180,6 +183,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
     gap: 32px;
+    justify-content: center;
 }
 .reviews-logos div .logo {
 	width: 59px;
@@ -196,7 +200,7 @@ a {
 	justify-content: center;
 }
 .within-hours-text {
-	width: 539px;
+	max-width: 539px;
 }
 .within-hours-text h2 {
 	color: #F8F3EA;
@@ -214,14 +218,14 @@ a {
 .within-hours-img {
 	width: 700px;
 	height: 578px;
-	background: #1F3251;
+	background: #2968cd;
 }
 
 
 .enchantments {
 	margin: 141px auto 0;
 	background: transparent radial-gradient(closest-side at 50% 50%, #1F325166 0%, #02070F 100%);
-	width: 1200px;
+	max-width: 1200px;
 }
 .enchantments-title {
 	text-align: center;
@@ -234,6 +238,7 @@ a {
 	display: flex;
 	gap: 18px;
 	flex-direction: row;
+	justify-content: center;
 }
 
 .enchantments-product {
@@ -325,7 +330,7 @@ a {
 }
 .characters {
 	display: flex;
-	width: 969px;
+	max-width: 969px;
 	justify-content: space-between;
 	margin: -100px auto 0;
 }
@@ -387,7 +392,7 @@ a {
 	color: #F8F3EA;
 	margin-bottom: 22px;
 	margin: auto;
-	width: 1125px;
+	max-width: 1125px;
 }
 .brotherhood-say {
 	display: flex;
@@ -453,7 +458,7 @@ a {
 	margin: 0;
 }
 .brotherhood-quest-gifs {
-	width: 1340px;
+	max-width: 1340px;
 	height: 426px;
 	display: flex;
 	gap: 5px;
@@ -498,7 +503,7 @@ a {
 .ingredients-list {
 	height: 39px;
 	border-bottom: 1px solid #F8F3EA;
-	width: 900px;
+	max-width: 900px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -575,7 +580,7 @@ a {
 	letter-spacing: 0px;
 	color: #F8F3EA;
     margin: 0 auto 30px;
-    width: 1030px;
+    max-width: 1030px;
 }
 .wizard-promise-block {
 	display: flex;
@@ -784,7 +789,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 1210px;
+	max-width: 1210px;
 }
 .grab-the-bull .below-cta h2 {
 	font-size: 100px;
@@ -804,12 +809,12 @@ a {
     top: 4rem;
 }
 .grab-the-bull .below-cta .img-one {
-	width: 492px;
+	max-width: 492px;
 	height: 478px;
 	background: #1F3251;
 }
 .grab-the-bull .below-cta .img-two {
-	width: 678px;
+	max-width: 678px;
 	height: 332px;
 	background: #1F3251;
     position: relative;
@@ -817,7 +822,7 @@ a {
     left: 32rem;
 }
 .grab-the-bull .below-cta .img-three {
-	width: 986px;
+	max-width: 986px;
 	height: 429px;
 	background: #1F3251;
 	box-shadow: 0px 0px 22px #02070F41;
@@ -959,16 +964,14 @@ a {
 	margin: 0;
 }
 
-
-
 .foot-cta {
 	height: 232px;
 	background: transparent linear-gradient(180deg, #02070F 0%, #02070F00 100%);
 	position: fixed;
 	bottom: 0;
-    flex-direction: row;
     display: flex;
-    width: 100%;
+    width: 100vw;
+    left: 0;
 }
 
 .foot-cta .cta {
@@ -983,3 +986,247 @@ a {
 	letter-spacing: 0px;
 	color: #992915;
 }
+
+
+@media (max-width: 1300px) {
+	.grab-the-bull .below-cta .img-one {
+	    max-width: 447px;
+	}
+	.grab-the-bull .below-cta .img-two {
+	    max-width: 531px;
+	    left: 29rem;
+	}
+	.grab-the-bull .below-cta .img-three {
+	    max-width: 830px;
+	    height: 400px;
+	    left: 5rem;
+    }
+    .grab-the-bull .below-cta p {
+    	left: 31rem;
+    }
+}
+@media (max-width: 900px) {
+	.sword-siege,
+	.brotherhood-say {
+	    flex-direction: column-reverse;
+	}
+	.sword-siege-img, 
+	.sword-siege-text,
+	.reviews-screenshot,
+	.reviews-logos,
+	.within-hours-text,
+	.within-hours-img,
+	.brotherhood-say-right,
+	.brotherhood-say-left {margin: auto;}
+
+	.reviews,
+	.within-hours {flex-direction: column;}
+
+	.brotherhood-say {gap: 0;}
+	.grab-the-bull .below-cta h2 {font-size: 80px;}
+	.grab-the-bull .below-cta p { 
+		left: 20rem;
+	    width: 300px;
+	}
+	.grab-the-bull .below-cta .img-one {max-width: 300px;}
+	.grab-the-bull .below-cta .img-two {
+	    max-width: 400px;
+	    left: 20rem;
+	    height: 270px;
+	}
+	.grab-the-bull .below-cta .img-three {
+		max-width: 700px;
+		left: 2rem;
+		height: 350px;
+	}
+	.ready-to-rise .ps { gap: 5px;}
+	.reviews-logos p {text-align: center;}
+	.reviews-logos div {height: auto;}
+	.reviews-logos div .logo {
+    width: 80px;
+    height: 80px;
+	}
+	.wizard-promise-copy h2 br {display: none;}
+	.ready-to-rise .add-fable h2 {font-size: 50px;}
+	.ready-to-rise .add-fable h2 span {font-size: 80px;}
+	.brotherhood-quest {
+	    flex-wrap: wrap;
+	    margin-bottom: 0;
+	}
+	.brotherhood-quest-gifs {
+	    flex-wrap: wrap;}
+    .brotherhood-quest-gifs>* {
+	  flex: 1 1 49%;
+	}
+	.brotherhood-quest-gifs div {
+	    height: 49%;
+	}
+	.ready-to-rise .ps .copy .bottom h1 {width: 80%;}
+}
+@media (max-width: 500px) {
+	.hero div h2 {font-size: 65px;}
+	.text-block.i-see-you p span {font-size: 20px;}
+	.sword-siege-text {max-width: 100%;}
+	.sword-siege-text .icons {
+	    width: 100%;
+	    flex-wrap: wrap;
+	    height: auto;
+	    justify-content: center;
+        margin-bottom: 40px;
+	}
+	.landing-page {padding: 0 15px;}
+	.sword-siege-text .icon-foot {
+	    width: 100%;
+	    float: initial;
+	}
+	.sword-siege {gap: 30px;}
+
+	.reviews-screenshot,
+	.within-hours-img,
+	.legendary-cta,
+	.brotherhood-say-right,
+	.brotherhood-say-left,
+	.brotherhood-quest,
+	.ingredients-list-content .copy,
+	.wizard-promise-img,
+	.wizard-promise-copy,
+	.grab-the-bull .above-cta p,
+	.grab-the-bull .above-cta a,
+	.beware-copy,
+	.beware-img,
+	.faq-body-answers {width: 100%;}
+
+	.within-hours-text h2 br,
+	.rundown-chart-group .left p br,
+	.rundown-title br,
+	.rundown-drops br,
+	.character-title br,
+	.brotherhood-title br {display: none;}
+
+	.enchantments-product.low {margin-top: 0;}
+	.enchantments-product-box,
+	.characters {flex-wrap: wrap;}
+	.enchantments-product {
+	    width: 100%;
+	    height: 460px;
+	}
+	.rundown-chart-group .right p {font-size: 20px;}
+	.rundown-chart-group .left p {font-size: 14px;}
+	.rundown-chart-group .left,
+	.rundown-chart-group .right {padding: 0 7px;}
+	.characters .two, .characters .four, .characters .three {margin-top: 0;}
+	.characters{ 
+		margin-top: 40px;
+		justify-content: center;
+	    gap: 30px;
+	}
+	.brotherhood-say-right {
+		font-size: 20px;
+		font-weight: 400;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	.brotherhood-say-left .right.one {margin-left: 7rem;}
+	.brotherhood-say-left .right.two {margin-left: 12rem;}
+	.brotherhood-say-left .left.two {margin-left: 1rem;}
+	.brotherhood-say-left {justify-content: space-between;}
+	.brotherhood-quest .title {font-size: 37px;}
+	.brotherhood-quest {gap: 25px;}
+	.brotherhood-quest-gifs {margin-bottom: 90px;}
+
+	.ingredients-list {
+	    height: 85px;
+	    flex-wrap: wrap;
+	}
+	.ingredients-list div.active {
+		border-bottom: none;
+	}
+	.ingredients-list div {font-size: 18px;}
+	.ingredients-list-content .content { flex-direction: column;}
+	.ingredients-list-content .copy .info, 
+	.ingredients-list-content .copy p:not(.info) {
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.wizard-promise {margin-top: 140px;}
+	.wizard-promise-block {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.ready-to-rise .add-fable h2 span {font-size: 50px;}
+	.ready-to-rise .add-fable h2 {font-size: 35px;}
+	.ready-to-rise .copy .text {
+		width: 100%;
+		left: 0;
+	}
+	.ready-to-rise .copy .subtext {
+	    left: 6rem;
+	    top: 30px;
+	}
+	.ready-to-rise {
+	    margin-top: 0rem;}
+    .grab-the-bull .below-cta .img-two {
+	    max-width: 93%;
+	    left: 2rem;
+	    top: -3rem;
+	    box-shadow: 0px 0px 22px #02070F41;
+	}
+	.grab-the-bull .below-cta .img-one {
+		height: 380px;
+	}
+	.grab-the-bull .below-cta .img-three {
+	    max-width: 90%;
+	    top: -4rem;
+	    left: 0rem;
+	    height: 350px;
+	}
+	.grab-the-bull .below-cta p {
+	    left: 9rem;
+	    width: 70%;
+	    top: 0rem;
+	}
+	.grab-the-bull .below-cta h2 {
+	    font-size: 65px;
+	}
+	.grab-the-bull .above-cta a span {    font-size: 17px;}
+	.beware {flex-direction: column;}
+	.faq-body-questions {
+	    width: 100%;
+	    height: auto;
+	    flex-direction: column;
+	    gap: 20px;
+	    margin-bottom: 60px;
+	}
+	.faq-body-questions p {font-size: 18px;}
+	.faq-body-divider {display: none;}
+	.faq-body {
+		flex-direction: column;
+		gap: 50px;
+	}
+	.ingredients-list-content .content {gap: 0;}
+	.ready-to-rise .ps .copy {
+	    width: 100%;
+	    order: 1;
+	}
+	.ready-to-rise .ps .copy .bottom h1 {
+    width: 69%;
+    margin: auto;
+	}
+	.ready-to-rise .ps {
+		height: auto;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	}
+	.ready-to-rise .ps .copy .bottom {
+	    width: 100%;
+	    margin: 40px 0;
+	    text-align: center;
+	}
+	.ready-to-rise .wiz-img, .ready-to-rise .prin-img {order: 2;}
+}
+
+
+
+
+

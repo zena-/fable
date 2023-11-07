@@ -355,8 +355,10 @@
         document.querySelector(".faq-body-answers .active").classList.remove("active")
         document.querySelector(".faq-body-answers .one").classList.add("active")
 
-        document.querySelector(".faq-body-divider").style.marginTop = "-17rem"
-        document.querySelector(".faq-body-answers .active").style.marginTop = "-13rem"
+        if (window.matchMedia("(min-width: 500px)").matches) {
+          document.querySelector(".faq-body-divider").style.marginTop = "-17rem"
+          document.querySelector(".faq-body-answers .active").style.marginTop = "-13rem"
+        }
       }
       document.querySelector(".faq-body-questions .two").onclick = () => {
         document.querySelector(".faq-body-questions .active").classList.remove("active")
@@ -367,8 +369,10 @@
         document.querySelector(".faq-body-answers .active").classList.remove("active")
         document.querySelector(".faq-body-answers .two").classList.add("active")
 
-        document.querySelector(".faq-body-divider").style.marginTop = "-10rem"
-        document.querySelector(".faq-body-answers .active").style.marginTop = "-9rem"
+        if (window.matchMedia("(min-width: 500px)").matches) {
+          document.querySelector(".faq-body-divider").style.marginTop = "-10rem"
+          document.querySelector(".faq-body-answers .active").style.marginTop = "-9rem"
+        }
       }
       document.querySelector(".faq-body-questions .three").onclick = () => {
         document.querySelector(".faq-body-questions .active").classList.remove("active")
@@ -378,9 +382,10 @@
 
         document.querySelector(".faq-body-answers .active").classList.remove("active")
         document.querySelector(".faq-body-answers .three").classList.add("active")
-
-        document.querySelector(".faq-body-divider").style.marginTop = "-3rem"
-        document.querySelector(".faq-body-answers .active").style.marginTop = "-3rem"
+        if (window.matchMedia("(min-width: 500px)").matches) {
+          document.querySelector(".faq-body-divider").style.marginTop = "-3rem"
+          document.querySelector(".faq-body-answers .active").style.marginTop = "-3rem"
+        }
       }
       document.querySelector(".faq-body-questions .four").onclick = () => {
         document.querySelector(".faq-body-questions .active").classList.remove("active")
@@ -390,9 +395,10 @@
 
         document.querySelector(".faq-body-answers .active").classList.remove("active")
         document.querySelector(".faq-body-answers .four").classList.add("active")
-
-        document.querySelector(".faq-body-divider").style.marginTop = "4rem"
-        document.querySelector(".faq-body-answers .active").style.marginTop = "4rem"
+        if (window.matchMedia("(min-width: 500px)").matches) {
+          document.querySelector(".faq-body-divider").style.marginTop = "4rem"
+          document.querySelector(".faq-body-answers .active").style.marginTop = "4rem"
+        }
       }
       document.querySelector(".faq-body-questions .five").onclick = () => {
         document.querySelector(".faq-body-questions .active").classList.remove("active")
@@ -402,9 +408,10 @@
 
         document.querySelector(".faq-body-answers .active").classList.remove("active")
         document.querySelector(".faq-body-answers .five").classList.add("active")
-
-        document.querySelector(".faq-body-divider").style.marginTop = "12rem"
-        document.querySelector(".faq-body-answers .active").style.marginTop = "12rem"
+        if (window.matchMedia("(min-width: 500px)").matches) {
+          document.querySelector(".faq-body-divider").style.marginTop = "12rem"
+          document.querySelector(".faq-body-answers .active").style.marginTop = "12rem"
+        }
       }
     </script>
   </body>
