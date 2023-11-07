@@ -1,0 +1,985 @@
+.landing-page {
+	background: #02070F;
+/*	width: 1201px;*/
+	margin-left: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hero {
+	width: 100%;
+	height: 687px;
+}
+
+.hero div {
+	margin: auto;
+	justify-content: center;
+	display: flex;
+    transform: translateY(50%);
+}
+
+.hero div h2 {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 96px;
+	letter-spacing: 1.92px;
+}
+
+.text-block.i-see-you {
+/*	background: transparent linear-gradient(180deg, #02070F 0%, #02070F00 100%);*/
+	background: transparent linear-gradient(180deg, #02070F 0%, #eff1f43b 100%);
+	display: flex;
+	margin: auto;
+	width: 100%;
+	border-bottom: 1px solid #F8D79A;
+}
+
+
+.text-block.i-see-you p {
+	text-align: center;
+/*	letter-spacing: NaNpx;*/
+	color: #F8F3EA;
+	font-size: 16px;
+	width: 471px;
+	margin: 85px auto 40px;
+}
+
+.text-block.i-see-you p span {
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+
+.sword-siege {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1201px;
+	margin: auto;
+
+}
+
+.sword-siege-img {
+	width: 249px;
+	height: 446px;
+}
+
+.sword-siege-text {
+	width: 641px;
+}
+
+.sword-siege-text h2 {
+	text-align: left;
+/*	font: normal normal 300 36px/50px Archivo;*/
+	font-size: 50px;
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin-bottom: 39px;
+}
+
+.icons {
+	width: 522px;
+	height: 195px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	float: right;
+}
+
+.icon {
+	max-width: 178px;
+	width: auto;
+}
+
+.icon-foot {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 40px;
+}
+.icon-foot p{
+	text-align: left;
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	font-size: 20px;
+	margin: 0 0 15px;
+}
+
+.hexagon {
+  position: relative;
+  width: 88px;
+  height: 102px;
+  background: transparent;
+/*  border: 3px solid #F8D79A;*/
+}
+.hexagon:before, .double:after {
+  position: absolute;
+  content: '';
+}
+.hexagon:before {
+  top: 4px;  /* border width */
+  left: 4px;  /* border width */
+  height: calc(100% - 8px);  /* 100% - (2 * border width) */
+  width: calc(100% - 8px);  /* 100% - (2 * border width) */
+  background: #F8D79A;
+}
+.hexagon, .hexagon:before, .double:after {
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.icon-img {
+/*	transform: matrix(0, 1, -1, 0, 0, 0);*/
+	margin: auto;
+}
+
+.icon p {
+	text-align: center;
+/*	font: normal normal normal 16px/24px Archivo;*/
+	font-size: 16px;
+	letter-spacing: 0px;
+	color: #F8F3EA;
+}
+
+
+.reviews {
+	margin: 85px auto 0;
+	display: flex;
+	width: 1201px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.reviews-copy {
+	width: 242px;
+	color: #F8F3EA;
+	font-size: 16px;
+	align-self: center;
+}
+.reviews-copy p {
+	margin: 0 0 10px;
+}
+.reviews-screenshot {
+	width: 458px;
+	height: 305px;
+	background: #1F3251;
+}
+.reviews-logos {
+	width: 255px;
+	height: 305px;
+}
+.reviews-logos p {
+	color: #F8F3EA;
+	margin: 70px 0;
+	font-weight: bold;
+}
+.reviews-logos div {
+	height: 150px;
+	display: flex;
+	flex-wrap: wrap;
+    gap: 32px;
+}
+.reviews-logos div .logo {
+	width: 59px;
+	height: 59px;
+	background: #1F3251;
+	border-radius: 50px;
+}
+
+
+.within-hours {
+	display: flex;
+	margin-top: 156px;
+	flex-direction: row;
+	justify-content: center;
+}
+.within-hours-text {
+	width: 539px;
+}
+.within-hours-text h2 {
+	color: #F8F3EA;
+	font-size: 36px;
+	margin: 60px 0;
+}
+.within-hours-text h2 span {
+	font-weight: bold;
+}
+.within-hours-text p {
+	color: #F8F3EA;
+	font-size: 16px;
+	margin: 0 0 16px;
+}
+.within-hours-img {
+	width: 700px;
+	height: 578px;
+	background: #1F3251;
+}
+
+
+.enchantments {
+	margin: 141px auto 0;
+	background: transparent radial-gradient(closest-side at 50% 50%, #1F325166 0%, #02070F 100%);
+	width: 1200px;
+}
+.enchantments-title {
+	text-align: center;
+/*	font: normal normal normal 40px/33px THE GONjURING;*/
+	font-size: 40px;
+	color: #F8F3EA;
+	margin: 65px 0;
+}
+.enchantments-product-box {
+	display: flex;
+	gap: 18px;
+	flex-direction: row;
+}
+
+.enchantments-product {
+	width: 365px;
+	height: 664px;
+	background: #1F3251;
+}
+
+.enchantments-product.low {margin-top: 73px;}
+
+.rundown {
+	margin: 99px auto 0;
+}
+.rundown-drops {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 'Archivo';
+	color: #F8F3EA;
+	text-transform: uppercase;
+	margin: 0 0 20px;
+}
+.rundown-title {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Helvetica Neue';
+	color: #F8F3EA;
+	margin: 0 0 46px;
+}
+.rundown-chart {
+	margin: 0 auto 70px;
+}
+.rundown-chart-group {
+	display: flex;
+	flex-direction: row;
+	width: ;
+	justify-content: center;
+}
+.rundown-chart-group .right {
+	width: 355px;
+	height: 115px;
+	border: 1px solid #F8F3EA;
+	display: flex;
+}
+.rundown-chart-group .right p {
+	align-self: center;
+	text-align: center;
+	font-size: 28px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8D79A;
+	margin: auto;
+}
+.rundown-chart-group .left {
+	width: 501px;
+	height: 115px;
+	border: 1px solid #F8F3EA;
+	display: flex;
+	border-left: none;
+}
+.rundown-chart-group .left p {
+	align-self: center;
+	text-align: center;
+	font-size: 16px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin: auto;
+}
+.rundown-chart-group:not(.last) .left, .rundown-chart-group:not(.last) .right {
+	border-bottom: none;
+}
+
+
+.character-title {
+	margin: 0 0 25px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "Archivo";
+	color: #F8F3EA;
+}
+.character-subtitle {
+	margin: 0;
+	text-align: center;
+	font-size: 16px;
+	font-family: "Archivo";
+	color: #F8F3EA;
+}
+.characters {
+	display: flex;
+	width: 969px;
+	justify-content: space-between;
+	margin: -100px auto 0;
+}
+.characters div {
+	background: #1F3251;
+	width: 89px;
+	height: 128px;
+	border-radius: 100px;
+}
+.characters .two, .characters .four {
+	margin-top: 95px;
+}
+
+.characters .three {
+	margin-top: 164px;
+}
+
+.legendary-beard {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 300;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin: 49px 0 20px;
+}
+.legendary-copy {
+	text-align: center;
+	font-size: 20px;
+	font-family: "Archivo";
+	color: #F8F3EA;
+	margin: 0 0 59px;
+}
+.legendary-cta {
+	width: 445px;
+	height: 61px;
+	background: #02070F;
+	border: 2px solid #F8D79A;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+.legendary-cta span{
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: "Archivo";
+	color: #F8F3EA;
+	align-self: center;
+}
+
+.brotherhood {
+	margin: 137px auto 0;
+}
+.brotherhood-title {
+	text-align: left;
+	font-size: 48px;
+	font-family: 'THE GONjURING';
+	color: #F8F3EA;
+	margin-bottom: 22px;
+	margin: auto;
+	width: 1125px;
+}
+.brotherhood-say {
+	display: flex;
+	flex-direction: row;
+	gap: 29px;
+	justify-content: center;
+}
+.brotherhood-say-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 510px;
+	height: 417px;
+}
+.brotherhood-say-left p {
+	font-weight: 600;
+	font-size: 28px;
+	font-family: "Archivo";
+	color: #F8F3EA;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.brotherhood-say-left .right.one {
+	margin-left: 15rem;
+}
+.brotherhood-say-left .right.two {
+	margin-left: 20rem;
+}
+.brotherhood-say-left .left.two {
+	margin-left: 5rem;
+}
+.brotherhood-say-right {
+	width: 595px;
+	height: 417px;
+	text-align: left;
+	font-weight: 600;
+	font-size: 28px;
+	font-family: "Archivo";
+	color: #F8F3EA;
+}
+
+.brotherhood-quest {
+	margin: 128px auto 50px;
+	display: flex;
+	gap: 48px;
+    width: fit-content;
+}
+.brotherhood-quest .title {
+	font-size: 48px;
+	font-family: 'THE GONjURING';
+	color: #F8F3EA;
+	text-transform: uppercase;
+    margin: -30px 0 0;
+}
+.brotherhood-quest .copy {
+	width: 463px;
+	height: 90px;
+	text-align: left;
+	font-size: 16px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin: 0;
+}
+.brotherhood-quest-gifs {
+	width: 1340px;
+	height: 426px;
+	display: flex;
+	gap: 5px;
+	margin:0 auto 127px;
+}
+.brotherhood-quest-gifs div {
+	background: #1F3251;
+	width: 100%;
+	height: 100%;
+}
+.brotherhood-quest-cta {
+	width: 335px;
+	height: 61px;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	border: 2px solid #F8D79A;
+}
+.brotherhood-quest-cta span {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	align-self: center;
+}
+
+
+
+.ingredients{
+	margin: 144px auto 0;
+}
+.ingredients-title {
+	text-align: center;
+	font-size: 48px;
+	font-family:'THE GONjURING';
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin-bottom: 50px;
+}
+.ingredients-list {
+	height: 39px;
+	border-bottom: 1px solid #F8F3EA;
+	width: 900px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 0 auto 77px;
+}
+.ingredients-list div {
+	text-align: center;
+	font-size: 20px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.ingredients-list div.active {
+	color: #F8D79A;
+	border-bottom: 1px solid #F8D79A;
+	margin-bottom: -1px;
+}
+.ingredients-list-content .content {
+	display: flex;
+	gap: 66px;
+	flex-direction: row;
+	justify-content: center;
+}
+.ingredients-list-content .photo, .ingredients-list-content .copy {
+	display: flex;
+	flex-direction: column;
+}
+.ingredients-list-content .photo div {
+	border-radius: 50%;
+	width: 226px;
+	height: 226px;
+	background: #F8F3EA;
+	margin: auto;
+}
+.ingredients-list-content .photo p {
+	text-align: center;
+	font-weight: 600;
+	font-size: 36px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8D79A;
+	text-transform: uppercase;
+	margin: 18px auto;
+}
+.ingredients-list-content .copy {
+	width: 450px;
+}
+.ingredients-list-content .copy .info {
+	font-size: 16px;
+	font-family: "Archivo";
+	color: #F8F3EA;
+	margin: 18px 0;
+}
+.ingredients-list-content .copy p:not(.info) {
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "Archivo";
+	color: #F8F3EA;
+	margin-left: 50px;
+}
+.ingredients-list-content .content:not(.active) {
+	display: none;
+}
+
+
+.wizard-promise {
+	margin: 240px auto 60px;
+}
+.wizard-promise-title {
+	font-size: 48px;
+	font-family: 'THE GONjURING';
+	letter-spacing: 0px;
+	color: #F8F3EA;
+    margin: 0 auto 30px;
+    width: 1030px;
+}
+.wizard-promise-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.wizard-promise-img {
+    width: 600px;
+    height: 337px;
+	background: #1F3251; /*remove*/
+}
+.wizard-promise-copy {
+	width: 423px;
+	align-self: center;
+}
+.wizard-promise-copy h2 {
+	font-size: 36px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin: 0;
+	text-align: right;
+}
+.wizard-promise-copy h2 span {
+	font-weight: bold;
+}
+.wizard-promise-copy p {
+	text-align: right;
+	font-size: 16px;
+	font-family: "Archivo";
+	color: #F8F3EA;
+	margin: 30px 0;
+}
+
+.faq {
+	margin: 61px auto 0;
+}
+.faq-title {
+	font-size: 48px;
+	font-family: 'THE GONjURING';
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	width: 1201px;
+	margin-left: auto;
+}
+.faq-body {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.faq-body-questions {
+	width: 446px;
+	height: 372px;
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+}
+.faq-body-questions p {
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	opacity: 0.59;
+	cursor: pointer;
+	margin: 0;
+}
+.faq-body-questions p.active {
+	opacity: 1;
+	font-size: 28px;
+	margin: 9px 28px 9px 0;
+	display: flex;
+}
+.faq-body-questions p.active::before {
+	align-self: center;
+	content: "	—";
+	color: #F8F3EA;
+	opacity: 1;
+	margin-right: 22px;
+}
+.faq-body-questions p.active + p, .faq-body-questions p.top {
+	opacity: 0.85;
+	margin-left: 12px;
+}
+.faq-body-answers {
+	width: 470px;
+	text-align: left;
+	align-self: center;
+}
+.faq-body-answers p {
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8D79A;
+	opacity: 1;
+	margin: 0;
+}
+.faq-body-answers p:not(.active) {
+    display: none;
+}
+.faq-body-answers p.active {
+	margin-top: -3rem;
+}
+.faq-body-divider {
+	width: 100px;
+	height: 114px;
+	align-self: center;
+	margin-right: 30px;
+	margin-top: -3rem;
+}
+.faq-body-divider .top {
+	border-bottom: 1px solid #F8D79A;
+	border-right: 1px solid #F8D79A;
+	height: 57px;
+}
+.faq-body-divider .bottom {
+	border-right: 1px solid #F8D79A;
+	height: 57px;
+}
+
+
+
+.beware {
+	margin: 137px auto 0;
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	justify-content: center;
+}
+.beware-copy {
+	width: 389px;
+	align-self: center;
+}
+.beware-copy h2 {
+	font-size: 48px;
+	font-family: 'THE GONjURING';
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin: 0;
+}
+.beware-copy p {
+	margin: 30px 0;
+	font-size: 16px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+}
+.beware-copy h5 {
+	color: #F8F3EA;
+	font-size: 36px;
+	font-weight: 300;
+	font-family: "Archivo";
+	margin: 0;
+}
+.beware-copy h5 span {
+	font-weight: 600;
+}
+.beware-img {
+	width: 680px;
+	height: 448px;
+	background: #1F3251;
+}
+
+
+.grab-the-bull {
+	margin: 111px auto 0;
+}
+.grab-the-bull .above-cta {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.grab-the-bull .above-cta h2 {
+	text-align: center;
+	font-size: 48px;
+	font-family: 'THE GONjURING';
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin: 0;
+}
+.grab-the-bull .above-cta p {
+	text-align: center;
+	font-size: 20px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin: 38px auto;
+	width: 427px;
+}
+.grab-the-bull .above-cta a {
+	width: 551px;
+	height: 61px;
+	border: 2px solid #F8D79A;
+}
+.grab-the-bull .above-cta a span {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 800;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+}
+.grab-the-bull .below-cta {
+	margin: 80px auto 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 1210px;
+}
+.grab-the-bull .below-cta h2 {
+	font-size: 100px;
+	font-family: 'THE GONjURING';
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin: 0;
+}
+.grab-the-bull .below-cta p {
+	font-size: 20px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	width: 459px;
+	position: relative;
+    left: 36rem;
+    top: 4rem;
+}
+.grab-the-bull .below-cta .img-one {
+	width: 492px;
+	height: 478px;
+	background: #1F3251;
+}
+.grab-the-bull .below-cta .img-two {
+	width: 678px;
+	height: 332px;
+	background: #1F3251;
+    position: relative;
+    top: -25rem;
+    left: 32rem;
+}
+.grab-the-bull .below-cta .img-three {
+	width: 986px;
+	height: 429px;
+	background: #1F3251;
+	box-shadow: 0px 0px 22px #02070F41;
+    position: relative;
+    top: -24rem;
+    left: 7rem;
+}
+
+.ready-to-rise {
+	margin-top: -15rem;
+    margin-bottom: 17rem;
+}
+.ready-to-rise .copy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.ready-to-rise .copy .text {
+	width: 432px;
+	text-align: left;
+	font-size: 20px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+    margin: auto;
+    position: relative;
+    left: -9rem;
+}
+.ready-to-rise .copy .subtext {
+	width: 194px;
+	height: 67px;
+	text-align: left;
+	font-size: 16px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+    margin: auto;
+    position: relative;
+    left: 7rem;
+}
+.ready-to-rise .main-text {
+	height: 594px;
+	background: transparent linear-gradient(0deg, #1F3251 0%, #02070F 100%);
+	display: flex;
+	justify-content: center;
+	margin-top: -7rem;
+}
+.ready-to-rise .main-text h2 {
+	text-align: center;
+	font-size: 48px;
+	font-family: 'THE GONjURING';
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	text-transform: uppercase;
+	align-self: center;
+}
+.ready-to-rise .add-fable h2 {
+	text-align: center;
+	font-size: 68px;
+	font-family: 'THE GONjURING';
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin: 124px auto 60px;
+}
+.ready-to-rise .add-fable h2 span {
+	font-size: 100px;
+}
+.ready-to-rise .add-fable a {
+	width: 244px;
+	height: 61px;
+	border: 2px solid #F8D79A;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+.ready-to-rise .add-fable a span {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 800;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	align-self: center;
+}
+.ready-to-rise .ps {
+	display: flex;
+	flex-direction: row;
+	gap: 100px;
+	height: 178px;
+	justify-content: center;
+	margin-top: 100px;
+}
+.ready-to-rise .wiz-img, .ready-to-rise .prin-img {
+	width: 112px;
+	height: 178px;
+	background: #992915;
+	border-radius: 41px;
+}
+.ready-to-rise .ps .copy {
+	width: 611px;
+}
+.ready-to-rise .ps .copy .top{
+	display: flex;
+    gap: 20px;
+}
+.ready-to-rise .ps .copy .top h1 {
+	font-size: 48px;
+	font-family: 'THE GONjURING';
+	letter-spacing: 0px;
+	color: #F8F3EA;
+    margin: 0;
+}
+.ready-to-rise .ps .copy .top p {
+	font-size: 12px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin: 0;
+	align-self: center;
+}
+.ready-to-rise .ps .copy .bottom {
+	margin-top: 31px;
+    width: fit-content;
+    margin-left: 14rem;
+}
+.ready-to-rise .ps .copy .bottom h1 {
+	font-size: 30px;
+	font-family: 'THE GONjURING';
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	margin: 0;
+}
+.ready-to-rise .ps .copy .bottom p {
+	font-size: 9px;
+	font-family: "Archivo";
+	letter-spacing: 0px;
+	color: #F8F3EA;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+
+
+.foot-cta {
+	height: 232px;
+	background: transparent linear-gradient(180deg, #02070F 0%, #02070F00 100%);
+	position: fixed;
+	bottom: 0;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+
+.foot-cta .cta {
+	width: 322px;
+	height: 61px;
+	background: #F8F3EA;
+	border: 2px solid #992915;
+	margin: auto;
+
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 0px;
+	color: #992915;
+}
