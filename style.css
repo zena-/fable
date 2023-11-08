@@ -319,7 +319,7 @@ img.hr {
 	margin-top: -40px;
 }
 
-
+.character {margin-bottom: 9rem;}
 .character-title {
 	margin: 0 0 25px;
 	text-align: center;
@@ -408,6 +408,7 @@ img.hr {
 	flex-direction: row;
 	gap: 29px;
 	justify-content: center;
+	padding-bottom: 5rem;
 }
 .brotherhood-say-left {
 	display: flex;
@@ -667,6 +668,8 @@ img.hr {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+    max-width: 1201px;
+    margin: auto;
 }
 .faq-body-questions {
 	width: 90%;
@@ -711,7 +714,7 @@ img.hr {
     gap: 80px;
 }
 .ans-block img {
-	height: 140px;
+	height: 80px;
     align-self: center;
 }
 .ans-block p {
@@ -1101,10 +1104,7 @@ img.hr {
 	.ready-to-rise .ps { gap: 5px;}
 	.reviews-logos p {text-align: center;}
 	.reviews-logos div {height: auto;}
-	.reviews-logos div .logo {
-    width: 80px;
-    height: 80px;
-	}
+
 	.wizard-promise-copy h2 br {display: none;}
 	.ready-to-rise .add-fable h2 {font-size: 50px;}
 	.ready-to-rise .add-fable h2 span {font-size: 80px;}
@@ -1293,7 +1293,7 @@ img.hr {
 	.legendary-cta,
 	.grab-the-bull .above-cta a {background-size: 110%;}
 
-	img.hr {display: none;}
+	img.hr, .characters div.five, .characters div.four {display: none;}
 }
 
 
