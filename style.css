@@ -3,7 +3,7 @@ html {overflow-x: hidden;}
 .landing-page {
 	background: #02070F;
 	margin: auto;
-	padding: 0 22px;
+/*	padding: 0 22px;*/
     overflow-x: hidden;
 }
 
@@ -31,7 +31,6 @@ a {
 }
 
 .text-block.i-see-you {
-/*	background: transparent linear-gradient(180deg, #02070F 0%, #02070F00 100%);*/
 	background: transparent linear-gradient(180deg, #02070F 0%, #eff1f43b 100%);
 	display: flex;
 	margin: auto;
@@ -220,7 +219,10 @@ a {
 	height: 578px;
 	background: #2968cd;
 }
-
+.within-hours-text img {
+	width: 519px;
+	height: 72px;
+}
 
 .enchantments {
 	margin: 141px auto 0;
@@ -311,6 +313,11 @@ a {
 .rundown-chart-group:not(.last) .left, .rundown-chart-group:not(.last) .right {
 	border-bottom: none;
 }
+img.hr {
+	width: 100%;
+	height: 47px;
+	margin-top: -40px;
+}
 
 
 .character-title {
@@ -365,13 +372,15 @@ a {
 	margin: 0 0 59px;
 }
 .legendary-cta {
-	width: 445px;
+	width: 434px;
 	height: 61px;
-	background: #02070F;
-	border: 2px solid #F8D79A;
-	margin: auto;
+	background: url('./BeginAdventureButton.svg') no-repeat center/cover;
+/*	border: 2px solid #F8D79A;*/
+	margin: 0 auto -20px;
 	display: flex;
 	justify-content: center;
+    z-index: 1;
+    position: relative;
 }
 .legendary-cta span{
 	text-align: center;
@@ -469,13 +478,41 @@ a {
 	width: 100%;
 	height: 100%;
 }
+
+.brotherhood-quest-gifs div.one {
+	-webkit-clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
+	background: url('./Beforeandafter1.gif') no-repeat center/cover;
+}
+.brotherhood-quest-gifs div.two {
+	-webkit-clip-path: polygon(40% 0, 100% 0%, 90% 100%, 0% 100%);
+	clip-path: polygon(40% 0, 100% 0%, 90% 100%, 0% 100%);
+    margin-left: -144px;
+    background: url('./Beforeandafter2.gif') no-repeat center/cover;
+}
+.brotherhood-quest-gifs div.three {
+	-webkit-clip-path: polygon(10% 0, 90% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(10% 0, 90% 0%, 100% 100%, 0% 100%);
+    margin-left: -30px;
+    background: url('./Beforeandafter3.gif') no-repeat center/cover;
+}
+.brotherhood-quest-gifs div.four {
+	-webkit-clip-path: polygon(0% 0, 100% 0%, 100% 100%, 10% 100%);
+	clip-path: polygon(0% 0, 100% 0%, 100% 100%, 10% 100%);
+    margin-left: -30px;
+    background: url('./Beforeandafter4.gif') no-repeat center/cover;
+}
+
 .brotherhood-quest-cta {
 	width: 335px;
 	height: 61px;
 	display: flex;
 	justify-content: center;
-	margin: auto;
-	border: 2px solid #F8D79A;
+	margin: 0 auto -21px;
+/*	border: 2px solid #F8D79A;*/
+	background: url('./DestinyButton.svg') no-repeat center/cover;
+	position: relative;
+	z-index: 1;
 }
 .brotherhood-quest-cta span {
 	text-align: center;
@@ -632,13 +669,12 @@ a {
 	justify-content: center;
 }
 .faq-body-questions {
-	width: 446px;
-	height: 372px;
+	width: 90%;
 	display: flex;
 	flex-direction: column;
 	gap: 36px;
 }
-.faq-body-questions p {
+.faq-body-questions .faq-block p.que {
 	font-size: 20px;
 	font-weight: 600;
 	font-family: "Archivo";
@@ -648,29 +684,37 @@ a {
 	cursor: pointer;
 	margin: 0;
 }
-.faq-body-questions p.active {
+.faq-body-questions .faq-block.active p.que {
 	opacity: 1;
 	font-size: 28px;
 	margin: 9px 28px 9px 0;
 	display: flex;
 }
-.faq-body-questions p.active::before {
+/*.faq-body-questions p.active::before {
 	align-self: center;
 	content: "	—";
 	color: #F8F3EA;
 	opacity: 1;
 	margin-right: 22px;
-}
-.faq-body-questions p.active + p, .faq-body-questions p.top {
+}*/
+/*.faq-body-questions p.active + p, .faq-body-questions p.top {
 	opacity: 0.85;
 	margin-left: 12px;
-}
-.faq-body-answers {
+}*/
+/*.faq-body-answers {
 	width: 470px;
 	text-align: left;
 	align-self: center;
+}*/
+.ans-block {
+    display: flex;
+    gap: 80px;
 }
-.faq-body-answers p {
+.ans-block img {
+	height: 140px;
+    align-self: center;
+}
+.ans-block p {
 	font-size: 20px;
 	font-weight: 600;
 	font-family: "Archivo";
@@ -679,10 +723,10 @@ a {
 	opacity: 1;
 	margin: 0;
 }
-.faq-body-answers p:not(.active) {
+.faq-body-questions .faq-block:not(.active) .ans-block {
     display: none;
 }
-.faq-body-answers p.active {
+/*.faq-body-answers p.active {
 	margin-top: -3rem;
 }
 .faq-body-divider {
@@ -700,7 +744,7 @@ a {
 .faq-body-divider .bottom {
 	border-right: 1px solid #F8D79A;
 	height: 57px;
-}
+}*/
 
 
 
@@ -772,9 +816,15 @@ a {
 	width: 427px;
 }
 .grab-the-bull .above-cta a {
-	width: 551px;
+	width: 583px;
 	height: 61px;
-	border: 2px solid #F8D79A;
+/*	border: 2px solid #F8D79A;*/
+	background: url('./BOGOButton.svg') no-repeat center/cover;
+	position: relative;
+	z-index: 1;
+	margin: 0 auto -14px;
+    justify-content: center;
+    display: flex;
 }
 .grab-the-bull .above-cta a span {
 	text-align: center;
@@ -783,6 +833,7 @@ a {
 	font-family: "Archivo";
 	letter-spacing: 0px;
 	color: #F8F3EA;
+	align-self: center;
 }
 .grab-the-bull .below-cta {
 	margin: 80px auto 0;
@@ -891,12 +942,17 @@ a {
 	font-size: 100px;
 }
 .ready-to-rise .add-fable a {
-	width: 244px;
+	width: 270px;
 	height: 61px;
-	border: 2px solid #F8D79A;
-	margin: auto;
 	display: flex;
 	justify-content: center;
+
+	background: url('./DestinyButton.svg') no-repeat center/cover;
+	position: relative;
+	z-index: 1;
+	margin: 0 auto -20px;
+    justify-content: center;
+    display: flex;
 }
 .ready-to-rise .add-fable a span {
 	text-align: center;
@@ -966,21 +1022,24 @@ a {
 
 .foot-cta {
 	height: 232px;
-	background: transparent linear-gradient(180deg, #02070F 0%, #02070F00 100%);
+/*	background: transparent linear-gradient(180deg, #02070F 0%, #02070F00 100%);*/
+	background: url('./cta-bg.png') no-repeat center/cover;
 	position: fixed;
 	bottom: 0;
     display: flex;
     width: 100vw;
     left: 0;
+
+    display: none;
 }
 
 .foot-cta .cta {
 	width: 322px;
 	height: 61px;
 	background: #F8F3EA;
-	border: 2px solid #992915;
-	margin: auto;
-
+/*	border: 2px solid #992915;*/
+	margin: 0 auto;
+	background: url('./ShopNowButton.svg') no-repeat center/cover;
 	text-align: center;
 	font-size: 16px;
 	letter-spacing: 0px;
@@ -1062,6 +1121,7 @@ a {
 	    height: 49%;
 	}
 	.ready-to-rise .ps .copy .bottom h1 {width: 80%;}
+	.within-hours-text img {width: auto;}
 }
 @media (max-width: 500px) {
 	.hero div h2 {font-size: 65px;}
@@ -1094,7 +1154,10 @@ a {
 	.grab-the-bull .above-cta a,
 	.beware-copy,
 	.beware-img,
-	.faq-body-answers {width: 100%;}
+	.faq-body-answers,
+	.within-hours-text img {width: 100%;}
+
+	.within-hours-text img {height: 60px;}
 
 	.within-hours-text h2 br,
 	.rundown-chart-group .left p br,
@@ -1189,7 +1252,7 @@ a {
 	.grab-the-bull .below-cta h2 {
 	    font-size: 65px;
 	}
-	.grab-the-bull .above-cta a span {    font-size: 17px;}
+	.grab-the-bull .above-cta a span {    font-size: 11px;}
 	.beware {flex-direction: column;}
 	.faq-body-questions {
 	    width: 100%;
@@ -1226,6 +1289,11 @@ a {
 	.ready-to-rise .wiz-img, .ready-to-rise .prin-img {order: 2;}
 	.within-hours-img {height: 377px;}
 	.foot-cta .cta {    font-size: 14px;}
+
+	.legendary-cta,
+	.grab-the-bull .above-cta a {background-size: 110%;}
+
+	img.hr {display: none;}
 }
 
 
